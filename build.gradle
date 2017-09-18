@@ -32,6 +32,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile('org.projectlombok:lombok')
+	compile('org.springframework.boot:spring-boot-starter-web')
 }
 /* https://mvnrepository.com/artifact/org.projectlombok/lombok
 provided group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
