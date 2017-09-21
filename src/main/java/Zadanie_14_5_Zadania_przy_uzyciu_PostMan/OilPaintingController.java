@@ -20,7 +20,7 @@ public class OilPaintingController {
 
     @RequestMapping(method = RequestMethod.GET, value = "getOilPainting")
     public OilPaintingDto getOilPaintingDto(String oilPaintingId){
-        return new OilPaintingDto((long)1, "Daria Solar", "The Girls", new Date(2010));
+        return new OilPaintingDto((long)1, "Daria Solar", "The Girls");
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "deleteOilPainting")
@@ -30,7 +30,7 @@ public class OilPaintingController {
 
     @RequestMapping(method = RequestMethod.POST, value = "upadteOilPainting")
     public OilPaintingDto updateOilPainting(OilPainting oilPainting){
-        return new OilPaintingDto((long)2, "Vincent van Gogh", "Słoneczniki", new Date(1888));
+        return new OilPaintingDto((long)2, "Vincent van Gogh", "Słoneczniki");
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "createOilPainting")

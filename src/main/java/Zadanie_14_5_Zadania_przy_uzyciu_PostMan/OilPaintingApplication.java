@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OilPaintingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OilPaintingApplication.class, args); // zapis sprawdzić w module
+        SpringApplication.run(OilPaintingApplication.class, args);
     }
 }

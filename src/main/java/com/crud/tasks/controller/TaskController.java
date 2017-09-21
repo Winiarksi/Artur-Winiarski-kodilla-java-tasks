@@ -3,17 +3,13 @@ package com.crud.tasks.controller;
 import com.crud.tasks.domain.TaskDto;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-/*adnotacja mówiąca Springowi, aby utworzył w kontekście aplikacji Controller wraz z niezbędnym ResponseBody,
- który jest charakterystyczny dla aplikacji webowych.
- Odpowiedź Controllera domyślnie jest w formacie JSON.
- Przyda nam się to już za chwilę.
-*/
 @RequestMapping("/v1/task")
 public class TaskController {
 
@@ -24,7 +20,7 @@ public class TaskController {
 
     @RequestMapping(method = RequestMethod.GET, value = "getTask")
     public TaskDto getTask(String taskId){
-        return new TaskDto((long)1, "test TiruRiru", "test_content_piwo_wino_kobiet i śpiew");
+        return new TaskDto((long)1, "test TiruRiru", "test_content");
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "deleteTask")
@@ -32,7 +28,7 @@ public class TaskController {
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "updateTask")
-    public TaskDto updateTask(TaskDto task){
+    public TaskDto updateTask(TaskDto taskDto){
         return new TaskDto((long)1, "Edited test title", "Test content");
     }
 

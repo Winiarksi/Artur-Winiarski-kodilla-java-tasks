@@ -11,5 +11,5 @@ public class OilPaintingDto {
     private Long id;
     private String autor;
     private String imageName;
-    private Date yearOfProduction;
+  //  private Date yearOfProduction;
 }
