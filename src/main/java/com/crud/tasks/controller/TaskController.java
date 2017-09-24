@@ -18,12 +18,18 @@ public class TaskController {
 
     @RequestMapping(method = RequestMethod.GET, value = "getTasks")
     public List<TaskDto> getTasks(){
-        return  new ArrayList<>();
+        List<TaskDto> x = new ArrayList<>();
+        x.add(new TaskDto((long)2, "222", "111"));
+        x.add(new TaskDto((long)3, "333", "333"));
+        x.add(new TaskDto((long)4, "4444", "444"));
+        x.add(new TaskDto((long)5, "555", "111"));
+        x.add(new TaskDto((long)6, "666", "111"));
+        return x;
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "getTask")
     public TaskDto getTask(String taskId){
-        return new TaskDto((long)1, "test", "test_content");
+        return new TaskDto((long)1, "Zakupy", "test_content");
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "deleteTask")
